@@ -11,6 +11,7 @@ export const POST = async (request) => {
   const { username, password } = body;
 
   //you should do the validation here
+  
   readDB();
   const user = DB.users.find(
     (user) => user.username === username && user.password === password
